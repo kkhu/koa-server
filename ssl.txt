@@ -1,0 +1,5 @@
+生成证书：
+openssl req -nodes -new -x509 -keyout server.key -out server.cert -days 1000
+
+
+common name :  localhost

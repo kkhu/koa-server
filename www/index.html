@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta charset="utf-8" />
+       <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+       <meta name="viewport" content="width=device-width,initial-scale-1.0,max-scale-1.0,user-scalable=0" />
+   </head>
+   <body>
+       The server is running
+
+       <script>
+            var socket;
+            function initSocket() {
+                socket = new WebSocket('ws://192.168.1.4:8989');
+                socket.onopen = function(event) {
+                    console.log(' opened ');
+                    socket.send('client say hi');
+                }
+                socket.onmessage = function(event) {
+                    console.log('received:'+event.data);
+                }
+                socket.onclose = function(event) {
+                    console.log('  closeed ');
+                } 
+            }
+            initSocket();
+       </script>
+   </body>
+</html>
