@@ -1,14 +1,14 @@
 
 exports.config = {
 	server: {
-		listen: 8888,
-		www: './www/',
+		listen: 80,
+		www: '../www/',
 		index: 'index.html',
 
 		gzip: true,
 
 		socket: {
-			listen: 8989
+			listen: 8888
 		},
 
 		proxy: {

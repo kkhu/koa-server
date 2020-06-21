@@ -71,8 +71,8 @@ router.get('/login',  async (ctx, next) => {
 app.listen(webConfig.server.listen);
 
 const options = {
-	key: fs.readFileSync("./src/server.key", "utf8"),
-	cert: fs.readFileSync("./src/server.cert", "utf8")
+	key: fs.readFileSync("./server.key", "utf8"),
+	cert: fs.readFileSync("./server.cert", "utf8")
 };
 https.createServer(options, app.callback()).listen(443);
 
