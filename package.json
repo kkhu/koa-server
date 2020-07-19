@@ -1,22 +1,21 @@
 {
   "name": "koa-server",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "koa, koa server, nodejs server",
   "author": "kk",
   "license": "MIT",
   "main": "index.js",
   "devDependencies": {
-    "koa": "^2.4.1",
-    "koa-compress": "^2.0.0",
-    "koa-ctx-cache-control": "^1.0.1",
-    "koa-gzip": "0.1.0",
-    "koa-logger": "^3.2.0",
-    "koa-proxy2": "0.11.0",
-    "koa-router": "^7.3.0",
-    "koa-static": "^4.0.2",
-    "properties-reader": "^0.0.15",
-    "ws": "^3.0.0",
     "fs": "^0.0.1-security",
-    "https": "^1.0.0"
+    "https": "^1.0.0",
+    "koa": "^2.13.0",
+    "koa-compress": "^5.0.1",
+    "koa-ctx-cache-control": "^1.0.1",
+    "koa-gzip": "^0.1.0",
+    "koa-logger": "^3.2.1",
+    "koa-proxy": "^1.0.0-alpha.3",
+    "koa-router": "^9.1.0",
+    "koa-static": "^5.0.0",
+    "ws": "^7.3.1"
   }
 }
